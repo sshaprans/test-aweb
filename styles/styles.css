@@ -1,0 +1,843 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/* :root{
+
+} */
+.wrapper{
+    width: 1040px;
+    max-width: calc(100% - 26%);
+    margin: 0 auto;
+}
+#header{
+    background-color: rgba(0, 139, 170, 1);
+    padding: 30px 0;
+    margin-bottom: 24px;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+
+}
+.box-logo{
+    display: flex;
+    align-items:flex-end;
+    column-gap: 22px;
+}
+.logo-text{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+
+}
+.box-call{
+    display: flex;
+    column-gap: 8px;
+    align-items: center
+}
+.telephone{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+}
+.call-link{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    border-bottom: 1px dashed hsla(0, 0%, 100%, 0.25);
+}
+.social-list{
+    display: flex;
+    column-gap: 14px;
+}
+/* first page */
+
+.first-page{
+    position: relative;
+    margin-bottom: 23px;
+}
+.first-img{
+    width: 100%;
+}
+.info-tour{
+    border-radius: 50%;
+    margin: 0 0 32px 31px ;
+    position: absolute;
+    background-color: rgba(255, 242, 0, 0.7);
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px  45px;
+    color: #000000;
+    font-family: 'Trebuchet MS';
+
+}
+.title-tour{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 16px;
+}
+.span-tour{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+.code-tour{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 20px;
+    background-color: #000000;
+}
+/* grade hotel */
+.hotel-stat{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 48px;
+
+}
+.hotel-info{
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 37px;
+}
+
+.rating{
+    padding-right: 27px;
+    padding-bottom: 8px;
+    display: flex;
+    column-gap: 29px;
+    
+
+}
+.name{
+
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 130%;
+    color: #000000;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.25);
+}
+.star{
+    -webkit-appearance: none;
+    appearance: none;
+    
+
+}
+.checkbox-star{
+    position:absolute;
+    width: 27px;
+    height: 26px;
+    background-image: url(../img/Star-stroke.png)
+}
+.star:checked+.checkbox-star{
+    background-image: url(../img/Star.png)
+}
+
+.price{
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+}
+/* hotel-grade */
+.hotel-grade{
+    display: flex;
+    align-items: center;
+}
+.title-grade{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-right: 32px;
+}
+.title-grade>span{
+    font-weight: 700;
+}
+.total-grade{
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 12px 7px;
+    background-color: #008BAA;
+    margin-right: 24px;
+
+}
+.list-grade{
+    display: flex;
+    column-gap: 16px;
+}
+.item-grade{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+}
+.item-grade>span{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+/* sun day */
+.sun-day{
+    position: absolute;
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #777777;
+    text-align: center;
+top: -22px;
+right: 98px;
+}
+.sun-day>span{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 0px;
+    color: #000000;
+}
+
+
+/* entertainment */
+.entertainment{
+    display: flex;
+    column-gap:40px;    
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+.entertainment-box{
+    width:50%
+}
+.entertainment-img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 24px;
+}
+.entertainment-text{
+    display: grid;
+    grid-template-columns: 1.25fr 0.8fr;
+    justify-content: space-between;
+
+}
+.num{
+    text-align: right;
+}
+.entertainment-link{
+    border-bottom: 1px solid hwb(0 0% 100% / 0.25);
+    margin-bottom: 10px;
+    cursor: url(../img/hand.svg), pointer;
+}
+.entertainment-link:hover{
+    color:#CB0000;
+    border-bottom: 1px solid hsla(0, 100%, 40%, 0.25);
+}
+
+.entertainment-link,
+.entertainment-price {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    color: #000000;
+}
+.entertainment-description{
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+.entertainment-sale{
+    text-decoration-line: line-through;
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #777777;
+    text-decoration-color: #CB0000;
+}
+/* promo */
+.promo-section{
+    padding: 35px 25px;
+    border: 1px solid #E0E0E0;
+    border-radius: 6px 6px 0 0;
+}
+.promo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.promo-sale{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    text-align: center;
+    color: #008BAA;
+    margin-right: 31px;
+}
+.promocode{
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #008BAA;
+    margin-bottom: 4px;
+}
+.promo-title{
+    font-family: 'Arial';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 8px;
+}
+.promo-text>span{
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+.promo-button{
+    margin-left: 30px;
+    padding: 13px 42px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #00AAAA 0%, #008BAA 100%);
+    border: none;
+    border-radius: 24px;
+}
+/* view */
+.view{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.view-more{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    border: 1px solid #E0E0E0;
+    border-radius: 0 0 6px 6px;
+    border-top: none;
+    background: #F7F7F7;
+}
+.view-check{
+    position:absolute;
+    top:0;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/view.svg)
+}
+.view-label{
+    position: relative;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    text-align: center;
+    color: #777777;
+    
+}
+.view:checked ~ .view-check, .view-more-win{
+    transform: rotate(180deg);
+}
+.view-box{
+    margin-bottom: 64px;
+} 
+/* post */
+
+.post{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.post-left{
+    grid-column: 1/10;
+    margin-right: 37px;
+}
+.post-right{
+    grid-column: 10/13;
+    text-align: left;
+    margin-top: 206px;
+}
+.post-right>p{
+    text-align: left;
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #777777;
+}
+.post-title{
+    grid-column: 1/11;
+    font-family: 'Trebuchet MS';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #000000;
+    margin-bottom: 32px;
+}
+.post-right-title{
+    font-family: 'Trebuchet MS';
+    font-weight: 700;
+    font-size: 100px;
+    letter-spacing: -10px;
+    color: #777777;
+}
+.post-right-titel-span{
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: -50px;
+    color: #000000;
+    letter-spacing: 0;
+}
+.prev-post{
+    font-family: 'Arial';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.titel-answer{
+    font-family: 'Arial';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 8px;
+}
+.post-text{
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+.reason{
+    margin: 24px 0 24px 48px;
+    padding: 9px 0 9px 24px;
+    border-left: 8px solid #008BAA;
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+.tabel-box{
+    padding: 16px;
+    margin-bottom: 24px;
+}
+.tabel-title{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 8px;
+}
+.grid-tabel{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 48px;
+    justify-content: space-between;
+    column-gap:8px;
+}
+.tabel-header{
+    padding: 8px 0;
+    width: 100%;
+    background: #F7F7F7;
+
+}   
+
+.tabel-header>h3{
+    background-color:hsla(0, 100%, 40%, 0.25);
+    font-family: 'DM Sans', sans-serif;
+    padding-left: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+    color: #000000;
+}
+.user-block{
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+    color: #000000;
+    background-color:hsla(0, 100%, 40%, 0.25);
+}
+.user-row{
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+}
+.user-padding{
+    padding-left: 4px;
+}
+.tabel-box>hr{
+    opacity: 0.25;
+}
+.title-list-dow{
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+.list-down{
+    padding-left: 30px;
+    margin-bottom: 24px;
+}
+.list-down>li{
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-top: 1px solid #E0E0E0;
+}
+.footer-link{
+    color: rgba(0, 89, 172, 1);
+    text-decoration-line: underline;
+}
+@media(max-width: 1150px){
+    .sun-day {
+        font-size: 60px;
+        right: 13px;
+    }
+    .sun-day>span{
+        font-size: 24px;
+    }
+    .logo-text {
+        font-size: 12px;
+    }
+    .telephone{
+        font-size: 16px;
+    }
+    .call-link{
+        font-size: 10px;
+    }
+    .logo-link>img{
+        width: 80%;
+    }
+    .social-link>img{
+        width: 80%;
+    }
+}
+@media(max-width: 950px){
+    .info-tour{
+        padding: 20px 25px;
+    }
+    .hotel-info{
+        column-gap:10px;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 10px;
+        
+    }
+    .name{
+        font-size: 16px;
+    }
+    .sun-day {
+        right: 50px;
+        line-height: 30px;
+    }
+    .hotel{
+        display: flex;
+        column-gap: 30px;
+    }
+    .hotel-stat{
+        margin-bottom: 0;
+    }
+    .list-grade{
+        display: none;
+    }
+    .hotel-grade {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+    }
+    .entertainment-link, .entertainment-price{
+        font-size: 16px;
+        
+    } 
+    .entertainment-description{
+        font-size: 9px;
+    }
+    .entertainment-sale{
+        font-size: 12px;
+    }
+    .promo-sale{
+        font-size: 16px;
+    }
+    .promo-title{
+        font-size: 14px;
+    }
+    .promo-title{
+        font-size: 9px;
+    }
+    .post-title{
+        font-size: 30px;
+        line-height: 34px;
+    }
+    .post-right-title {
+        font-size: 70px;
+        letter-spacing: 0;
+
+    }
+    .post-right-titel-span{
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    .post-right>p{
+        font-size: 15px;
+        margin-top: 7px;
+        line-height: 18px;
+    }
+}
+@media(max-width: 800px){
+       .box-logo{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 5px;
+       } 
+       .logo-link>img{
+        width: 70%;
+       }
+       .logo-text{
+        font-size: 9px;
+        line-height: 9px;
+       }
+       #header{
+        padding: 10px 0;
+       }
+       .box-call{
+        flex-direction: column-reverse;
+       }
+       .telephone{
+        line-height: 21px;
+       }
+       .title-tour{
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 8px;
+       }
+       .span-tour{
+        font-size: 9px;
+        margin-bottom: 4px;
+       }
+       .code-tour{
+        font-size: 14px;
+       }
+       .price{
+        font-size: 14px;
+       }
+       .promo-button{
+        padding: 13px 25px;
+       }
+       .promo-text>span{
+        font-size: 9px;
+       }
+       .promo-button{
+        font-size: 12px;
+       }  
+
+}
+@media(max-width: 700px){
+    .sun-day{display: none;}
+    
+    .hotel{
+        width: 100%;
+        justify-content: space-between;
+    }
+    #post{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .post-right{
+        margin-top: 0px;
+        margin-bottom: 20px;
+        display:flex;
+        column-gap: 20px
+    }
+    .wrapper{
+        max-width: calc(100% - 10%);
+    }
+}
+@media(max-width: 450px){
+    .logo-link>img {
+        width: 45%;
+    }
+    .logo-text {
+        display: none;
+    }
+    .telephone {
+        font-size: 9px;
+    }
+    .call-link {
+        font-size: 6px;
+        line-height: 6px;
+    }
+    .social-link>img {
+        width: 50%;
+    }
+    .social-item{
+        text-align: center;
+    }
+    #promo-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+    }
+    #promo-button{
+        margin: 0 auto;
+        grid-column: 1/3;
+    }
+    #entertainment{
+        width: 100%;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .entertainment-box {
+        width: 100%;
+    }
+    .info-tour {
+        padding: 10px 8px;
+        margin: 0 0 12px 13px;
+    }
+    .title-tour {
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 5px;
+    }
+    .span-tour {
+        font-size: 9px;
+        margin-bottom: 0px;
+    }
+    .code-tour {
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .total-grade {
+        font-size: 31px;
+        line-height: 28px;
+        padding: 13px 3px;
+        margin-right: 10px;
+    }
+    .hotel-grade {
+        flex-direction: row;
+    }
+    .post-right-title {
+        font-size: 50px;
+    }.post-right-titel-span {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    .post-right>p {
+        font-size: 9px;
+        margin-top: 5px;
+        line-height: 10px;
+    }
+    .footer>p{
+        font-size: 9px;
+    }
+    .social-list {
+        column-gap: 0px;
+    }
+    .promo-text>span {
+        font-size: 9px;
+        line-height: normal;
+    }
+    .promo-section {
+        padding: 35px 25px;
+    }
+    .promo-section {
+        padding: 13px 13px;
+    }
+    .small{font-size: 9px;}
+    .tabel-header>h3{font-size: 9px;}
+    .promo-sale {
+        font-size: 32px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
